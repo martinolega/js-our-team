@@ -1,0 +1,17 @@
+/*600px*/
+@media screen and (min-width: 600px)
+{
+    .card
+    {
+        width: calc(100% / 2 - 50px);
+    }
+}
+
+/*1100px*/
+@media screen and (min-width: 900px)
+{
+    .card
+    {
+        width: calc(100% / 3 - 60px);
+    }
+}
