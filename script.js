@@ -37,3 +37,27 @@ const teamMembers = [
   }
 ];
 
+const listElem = document.getElementById("card-container");
+let cards = "";
+
+
+console.log(listElem);
+
+for (let i = 0; i < teamMembers.length; i++)
+{
+  const tempMember = teamMembers[i];
+  let card =
+  `
+  <div class="card mb-3 bg-black text-white rounded-0 min-height-100px">
+  <p>${tempMember.name}</p>
+  <p>${tempMember.role}</p>
+  <p>${tempMember.email}</p>
+  </div>
+  `
+
+  cards = cards + card;
+}
+
+console.log(cards);
+
+listElem.innerHTML = cards;
