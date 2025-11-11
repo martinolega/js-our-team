@@ -1,3 +1,10 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .card
 {
     width: calc(100% - 50px);
@@ -8,7 +15,30 @@
     background-color: black;
 }
 
+/*
 .min-height-100px
 {
     min-height: 100px;
+}
+*/
+
+.w-small
+{
+    width: 30%;
+}
+
+.w-large
+{
+    width: 70%;
+}
+
+.w-100pc
+{
+    width: 100%;
+}
+
+.gen
+{
+    margin: 0;
+    padding: 0;
 }

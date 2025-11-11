@@ -49,11 +49,29 @@ for (let i = 0; i < teamMembers.length; i++)
   let card =
   `
   <div class="card mb-3 bg-black text-white rounded-0 min-height-100px">
-  <p>${tempMember.name}</p>
+  <div class="d-flex">
+  <div class="w-small">
+  <img src="${tempMember.img}" class="w-100pc">
+  </div>
+  <div class="w-large d-flex flex-column justify-content-evenly py-1">
+  <p class="mx-2 gen">${tempMember.name.toUpperCase()}</p>
+  <p class="mx-2 gen">${tempMember.role}</p>
+  <p class="mx-2 gen">${tempMember.email}</p>
+  </div>
+  </div>
+  </div>
+  `
+
+  /*
+  `
+  <div class="card mb-3 bg-black text-white rounded-0 min-height-100px">
+  <img src="${tempMember.img}" class="w-30pc">
+  <p>${tempMember.name.toUpperCase()}</p>
   <p>${tempMember.role}</p>
   <p>${tempMember.email}</p>
   </div>
   `
+  */
 
   cards = cards + card;
 }
